@@ -1,0 +1,174 @@
+index.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Tech | Eletrônicos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .banner {
+            background: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1350&q=80') center/cover;
+            height: 260px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px black;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 12px 0;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #555;
+        }
+
+        .preco {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #111;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>Loja Tech • Eletrônicos e Acessórios</header>
+
+<nav>
+    <a href="#">Início</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<div class="banner">
+    Promoções especiais esta semana!
+</div>
+
+<div class="container">
+    <h2 id="produtos">📦 Produtos em Destaque</h2>
+
+    <div class="produtos">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=60">
+            <h3>Smartphone</h3>
+            <p>4GB RAM • 128GB • Tela 6.5"</p>
+            <div class="preco">R$ 999,00</div>
+            <a class="btn" href="https://wa.me/55DDDSEUNUMERO" target="_blank">Comprar</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=60">
+            <h3>Notebook</h3>
+            <p>i5 • SSD 240GB • 8GB RAM</p>
+            <div class="preco">R$ 2.399,00</div>
+            <a class="btn" href="https://wa.me/55DDDSEUNUMERO" target="_blank">Comprar</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=800&q=60">
+            <h3>Fone Bluetooth</h3>
+            <p>Alta qualidade • Bateria 20h</p>
+            <div class="preco">R$ 149,00</div>
+            <a class="btn" href="https://wa.me/55DDDSEUNUMERO" target="_blank">Comprar</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900d5?auto=format&fit=crop&w=800&q=60">
+            <h3>Smartwatch</h3>
+            <p>Monitor cardíaco • Passos • Notificações</p>
+            <div class="preco">R$ 199,00</div>
+            <a class="btn" href="https://wa.me/55DDDSEUNUMERO" target="_blank">Comprar</a>
+        </div>
+
+    </div>
+</div>
+
+<footer id="contato">
+    Contato WhatsApp: <strong>(DDD) SEU NÚMERO</strong><br>
+    Instagram: <strong>@sualoja</strong><br>
+    © 2025 Loja Tech
+</footer>
+
+</body>
+</html>
